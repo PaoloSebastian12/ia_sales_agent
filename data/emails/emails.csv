@@ -1,0 +1,4 @@
+id,remetente,assunto,corpo
+1,cliente_interessado@empresa.com,Pergunta sobre Segurança ISO,"Olá, estamos revisando o software de vocês. Vocês possuem certificação ISO 27001 para armazenamento de dados na nuvem? É um requisito eliminatório para fecharmos o contrato."
+2,tech_lead@startup.io,Integração API,Preciso saber se a API de vocês suporta autenticação via OAuth2 e se há limites de requisições por segundo (rate limiting). Não encontrei isso de forma clara.
+3,vendas_senior@corp.com,Desconto Especial,O cliente quer um desconto de 40% no plano Enterprise para fechar hoje. O contrato padrão permite essa margem ou precisamos de aprovação do financeiro?

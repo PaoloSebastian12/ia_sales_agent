@@ -1,0 +1,7 @@
+llama-index
+langchain
+langgraph
+langchain-google-genai
+trulens-eval
+pandas
+python-dotenv
