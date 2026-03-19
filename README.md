@@ -1,11 +1,22 @@
 # 🚀 AI Sales & Compliance Intelligence Agent
 
-This repository features an advanced AI agent designed to streamline sales engineering and legal compliance. By leveraging **Hierarchical Auto-merging Retrieval (RAG)**, the system analyzes complex legal contracts and technical manuals to provide high-fidelity, context-aware insights.
+This repository features an advanced Multi-Engine AI Agent designed to bridge the gap between complex sales engineering, customer history, and legal compliance. By combining Hierarchical RAG with autonomous routing, the system provides high-fidelity, evidence-based insights for enterprise decision-making.
+
 
 ## 🧠 Core Technical Features
 
-* **Hierarchical Auto-merging Retrieval:** Optimized context window management that automatically merges smaller leaf nodes into parent chunks for superior semantic accuracy.
-* **Intelligent Multi-Engine Routing:** A dynamic router that autonomously selects the appropriate knowledge base—whether technical documentation, customer email history, or legal TOS—based on the user's intent.
+* **Hierarchical Auto-merging Retrieval:** Unlike standard RAG, this system uses a parent-child recursive structure:
+
+Leaf Node Retrieval: The engine searches for small, precise "leaf" nodes (512 tokens) to ensure high semantic matches.
+
+Recursive Merging: If enough child nodes from the same context are retrieved, the engine automatically "merges" them into their larger parent context. This solves the "lost in the middle" problem and provides the LLM with complete paragraphs or sections for better reasoning.
+* **Intelligent Multi-Engine Routing:** The core is a RouterQueryEngine that acts as a decision-making agent. It dynamically evaluates user intent to select the most relevant specialized engine:
+
+Technical Engine: Analyzes PDF manuals and AWS/Architecture specs.
+
+Legal & Compliance Engine: Processes complex TOS, Google Cloud contracts, and liability terms.
+
+CRM/Email Engine: A specialized CSV retriever that tracks customer feedback and previous interactions.
 * **RAGAS Evaluation Framework:** Integrated quality assurance that measures **Faithfulness** (hallucination mitigation) and **Answer Relevancy** in real-time using NLP metrics.
 * **Streamlit UI:** A clean, production-ready interface for interactive querying, system status monitoring, and metric visualization.
 
