@@ -8,12 +8,15 @@ This repository features an advanced Multi-Engine AI Agent designed to bridge th
 **Hierarchical Auto-merging Retrieval:** Unlike standard RAG, this system uses a parent-child recursive structure:
  * Leaf Node Retrieval: The engine searches for small, precise "leaf" nodes (512 tokens) to ensure high semantic matches.
  * Recursive Merging: If enough child nodes from the same context are retrieved, the engine automatically "merges" them into their larger parent context. This solves the "lost in the middle" problem and provides     the LLM with complete paragraphs or sections for better reasoning.
+   
 **Intelligent Multi-Engine Routing:** The core is a RouterQueryEngine that acts as a decision-making agent. It dynamically evaluates user intent to select the most relevant specialized engine:
  * Technical Engine: Analyzes PDF manuals and AWS/Architecture specs.
  * Legal & Compliance Engine: Processes complex TOS, Google Cloud contracts, and liability terms.
 
  * CRM/Email Engine: A specialized CSV retriever that tracks customer feedback and previous interactions.
+
 **RAGAS Evaluation Framework:** Integrated quality assurance that measures **Faithfulness** (hallucination mitigation) and **Answer Relevancy** in real-time using NLP metrics.
+
 **Streamlit UI:** A clean, production-ready interface for interactive querying, system status monitoring, and metric visualization.
 
 ---
